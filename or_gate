@@ -3,11 +3,11 @@ data flow modeling
 module or_gate(A,B,Y);
 	input A,B;
 	output Y;
-	assign Y = A^B;
+	assign Y = A|B;
 endmodule	
 
 testbench code
-module and_gate_tb;
+module or_gate_tb;
 reg A,B;
 wire Y;
 or_gate orgate(.A(A),.B(B),.Y(Y));
